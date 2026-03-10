@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahanubhav Sangam - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Mahanubhav Sangam</h1>
+        <p>Create your profile</p>
+
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                
+                <input type="date" id="dob" name="dob" required>
+                
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <input type="text" id="city" name="city" placeholder="Current City" required>
+                <input type="text" id="education" name="education" placeholder="Highest Education" required>
+                <input type="text" id="profession" name="profession" placeholder="Profession" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Community Information</legend>
+                <div class="radio-group">
+                    <label>Kaan fukle aahe ka?</label>
+                    <label><input type="radio" name="kaanFukle" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="kaanFukle" value="No"> No</label>
+                </div>
+
+                <select id="caste" name="caste" required>
+                    <option value="" disabled selected>Select Caste</option>
+                    <option value="Brahmin">Brahmin</option>
+                    <option value="Maratha">Maratha</option>
+                    <option value="Kunbi">Kunbi</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Live Verification</legend>
+                <p class="instruction">For verification, please start the recording and clearly recite the Paach Naav. Do not read from a script.</p>
+                
+                <div class="video-wrapper">
+                    <video id="liveVideo" autoplay muted></video>
+                </div>
+                
+                <div class="video-controls">
+                    <button type="button" id="startBtn" class="btn primary">Start Camera & Record</button>
+                    <button type="button" id="stopBtn" class="btn danger" disabled>Stop Recording</button>
+                </div>
+                <p id="recordingStatus"></p>
+            </fieldset>
+
+            <button type="submit" id="submitBtn" class="btn success" disabled>Submit Registration</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

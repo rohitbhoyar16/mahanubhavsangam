@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.registration-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #d35400;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 0.5rem;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    margin-bottom: 1rem;
+}
+
+.radio-group label {
+    margin-right: 1rem;
+}
+
+.instruction {
+    font-size: 0.9rem;
+    color: #c0392b;
+    font-weight: bold;
+    text-align: left;
+}
+
+.video-wrapper {
+    width: 100%;
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+.video-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+}
+
+.btn.primary { background-color: #3498db; color: white; }
+.btn.danger { background-color: #e74c3c; color: white; }
+.btn.success { background-color: #2ecc71; color: white; width: 100%; font-size: 1.1rem;}
+.btn:disabled { background-color: #bdc3c7; cursor: not-allowed; }
