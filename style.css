@@ -8,12 +8,13 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem; /* Reduced for mobile screens */
+    margin: 0;
 }
 
 .registration-container {
     background: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     width: 100%;
@@ -24,12 +25,14 @@ h1 {
     color: #d35400;
     text-align: center;
     margin-bottom: 0.2rem;
+    font-size: 1.8rem;
 }
 
 p {
     text-align: center;
     color: #7f8c8d;
     margin-bottom: 1.5rem;
+    font-size: 0.95rem;
 }
 
 fieldset {
@@ -45,58 +48,108 @@ legend {
     padding: 0 0.5rem;
 }
 
+/* Base Inputs - 16px font prevents iOS zoom */
 input[type="text"], input[type="date"], select {
     width: 100%;
-    padding: 10px;
+    padding: 14px 12px; /* Larger touch area */
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; 
+    background-color: #fff;
 }
 
+/* Radio Buttons optimized for tapping */
 .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-bottom: 1rem;
+    align-items: center;
 }
 
 .radio-group label {
-    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    padding: 5px 0; 
+}
+
+.radio-group input[type="radio"] {
+    width: 22px;
+    height: 22px; /* Larger radio dials */
+    margin: 0;
 }
 
 .instruction {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #c0392b;
     font-weight: bold;
     text-align: left;
+    line-height: 1.4;
 }
 
+/* Video Container handles mobile portrait mode */
 .video-wrapper {
     width: 100%;
     background: #000;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; /* Gives shape before camera loads */
 }
 
 video {
     width: 100%;
+    max-height: 60vh; /* Prevents portrait video from taking over the whole screen */
+    object-fit: cover;
     display: block;
 }
 
+/* Buttons stack on mobile, sit inline on desktop */
 .video-controls {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 12px;
     margin-bottom: 1rem;
 }
 
 .btn {
-    padding: 10px 15px;
+    padding: 14px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    flex: 1;
+    font-size: 16px; /* Larger text for readability */
+    text-align: center;
+    width: 100%;
 }
 
 .btn.primary { background-color: #3498db; color: white; }
 .btn.danger { background-color: #e74c3c; color: white; }
-.btn.success { background-color: #2ecc71; color: white; width: 100%; font-size: 1.1rem;}
-.btn:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+.btn.success { background-color: #2ecc71; color: white; font-size: 1.1rem; margin-top: 10px;}
+.btn:disabled { background-color: #bdc3c7; cursor: not-allowed; opacity: 0.7; }
+
+#recordingStatus {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Media Query for Tablets and Desktop */
+@media (min-width: 480px) {
+    body {
+        padding: 2rem;
+    }
+    
+    .registration-container {
+        padding: 2.5rem;
+    }
+
+    .video-controls {
+        flex-direction: row; /* Side-by-side buttons on larger screens */
+    }
+}
