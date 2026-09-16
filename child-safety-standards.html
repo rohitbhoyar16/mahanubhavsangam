@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Safety Standards — Mahanubhav Sangam</title>
+<link rel="icon" href="../mahanubhav-logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon:#7A1220;
+    --maroon-deep:#4E0B12;
+    --gold:#B7862F;
+    --gold-light:#D9B267;
+    --cream:#FBF5E7;
+    --cream-2:#F3E8D2;
+    --ink:#2B1810;
+    --ink-soft:#5C4A3E;
+    --line: rgba(122,18,32,0.18);
+    --radius: 3px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--cream);color:var(--ink);font-family:'Mukta',sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  h1,h2,.display{font-family:'Rozha One',serif;font-weight:400;color:var(--maroon-deep);line-height:1.2;}
+  a{color:var(--maroon);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 28px;}
+  :focus-visible{outline:2px solid var(--maroon);outline-offset:3px;}
+  .motif{height:10px;background-image:repeating-linear-gradient(135deg, var(--gold) 0 3px, transparent 3px 14px);opacity:0.55;}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(251,245,231,0.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  .nav{max-width:1120px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);}
+  .brand-name{font-family:'Rozha One',serif;font-size:20px;color:var(--maroon-deep);}
+  .brand-name span{display:block;font-family:'Mukta',sans-serif;font-size:11.5px;color:var(--ink-soft);font-weight:500;margin-top:1px;}
+  .back-link{font-size:14.5px;font-weight:600;color:var(--ink-soft);}
+  .back-link:hover{color:var(--maroon);}
+
+  .page-head{padding:64px 0 36px;}
+  .eyebrow-mark{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  .eyebrow-mark .rule{width:34px;height:1px;background:var(--gold);}
+  .eyebrow-mark span{font-size:13.5px;letter-spacing:0.5px;color:var(--ink-soft);font-weight:600;}
+  .page-head h1{font-size:40px;margin-bottom:14px;}
+  .page-head p{color:var(--ink-soft);font-size:16px;max-width:640px;}
+  .updated{font-size:13.5px;color:var(--ink-soft);margin-top:10px;}
+
+  .content{padding:10px 0 90px;}
+  .content h2{font-size:22px;margin:40px 0 14px;border-top:1px solid var(--line);padding-top:34px;}
+  .content section:first-of-type h2{border-top:none;padding-top:0;margin-top:0;}
+  .content p{color:var(--ink-soft);margin-bottom:14px;font-size:16px;}
+  .content ul, .content ol{margin:0 0 14px 20px;color:var(--ink-soft);}
+  .content ul li, .content ol li{margin-bottom:8px;font-size:16px;}
+  .content strong{color:var(--ink);}
+
+  .toc{background:var(--cream-2);border:1px solid var(--line);border-radius:6px;padding:26px 28px;margin-top:34px;}
+  .toc h3{font-family:'Mukta';font-size:14px;font-weight:700;color:var(--maroon-deep);margin-bottom:14px;letter-spacing:0.3px;}
+  .toc ol{margin-left:18px;}
+  .toc ol li{font-size:15px;margin-bottom:8px;}
+  .toc a{color:var(--ink-soft);font-weight:600;}
+  .toc a:hover{color:var(--maroon);}
+
+  .banner{
+    background:var(--maroon-deep);color:#fff;border-radius:6px;padding:26px 30px;margin-top:8px;
+  }
+  .banner strong{color:#fff;}
+  .banner p{color:#E8D9C4;margin-bottom:0;}
+
+  .contact-box{margin-top:16px;background:var(--cream-2);border:1px solid var(--line);border-radius:6px;padding:28px 30px;}
+  .contact-box h2{margin-top:0;padding-top:0;border-top:none;font-size:20px;}
+  .contact-box p{margin-bottom:6px;}
+  .field-label{font-size:12.5px;font-weight:700;color:var(--maroon);letter-spacing:0.3px;text-transform:uppercase;display:block;margin-top:16px;margin-bottom:5px;}
+
+  footer{background:var(--maroon-deep);color:#EADFCB;padding:36px 0;margin-top:0;}
+  .footer-bottom{max-width:1120px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#9C8A72;}
+  .footer-bottom a{color:#C9B79C;}
+  .footer-bottom a:hover{color:#fff;}
+
+  @media (max-width:560px){
+    .page-head h1{font-size:30px;}
+    nav.nav{padding:14px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="../index.html" class="brand" style="text-decoration:none;">
+      <img src="../mahanubhav-logo.jpeg" alt="Mahanubhav Sangam emblem">
+      <div class="brand-name">Mahanubhav Sangam<span>Vivah Sangam for the Panthiya Samaj</span></div>
+    </a>
+    <a href="../index.html" class="back-link">&larr; Back to home</a>
+  </div>
+</header>
+
+<div class="motif"></div>
+
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <div class="eyebrow-mark"><span class="rule"></span><span>Trust &amp; safety</span></div>
+      <h1>Child Safety Standards</h1>
+      <p>Mahanubhav Sangam is a matrimony platform built strictly for adults of legal marriageable age. We maintain a zero-tolerance policy toward child sexual abuse and exploitation (CSAE) in any form, and we are committed to preventing, detecting, and reporting it.</p>
+      <p class="updated">Last updated: 16 September 2026</p>
+    </div>
+
+    <div class="toc">
+      <h3>On this page</h3>
+      <ol>
+        <li><a href="#commitment">Our commitment</a></li>
+        <li><a href="#age">Minimum age &amp; eligibility</a></li>
+        <li><a href="#prevention">Prevention &amp; detection measures</a></li>
+        <li><a href="#reporting">How to report a concern</a></li>
+        <li><a href="#response">What happens after a report</a></li>
+        <li><a href="#resources">External reporting resources</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </div>
+
+    <div class="content">
+      <section id="commitment">
+        <h2>1. Our commitment</h2>
+        <p>Mahanubhav Sangam has a zero-tolerance policy toward child sexual abuse and exploitation (CSAE), grooming, and any content or behaviour that endangers minors. This applies to every part of our platform — profiles, photographs, messages, and any other content shared through the app.</p>
+        <p>We comply with Google Play's Child Safety Standards policy and with applicable child protection laws, including the Protection of Children from Sexual Offences (POCSO) Act, 2012, in India.</p>
+      </section>
+
+      <section id="age">
+        <h2>2. Minimum age &amp; eligibility</h2>
+        <p>Mahanubhav Sangam is a matrimony app intended only for adults of legal marriageable age in their jurisdiction (18 years and above for women, 21 years and above for men, under Indian law). Registration is not permitted for anyone below this age, and we do not knowingly allow minors to create or maintain an account.</p>
+        <ul>
+          <li>Date of birth is collected at registration and used to verify eligibility.</li>
+          <li>Accounts found to misrepresent age or belong to a minor are removed immediately upon detection.</li>
+        </ul>
+      </section>
+
+      <section id="prevention">
+        <h2>3. Prevention &amp; detection measures</h2>
+        <p>We take the following steps to keep minors off the platform and to prevent CSAE:</p>
+        <ul>
+          <li><strong>Profile review:</strong> profiles are reviewed before becoming visible to other members, with checks for age-related red flags.</li>
+          <li><strong>Reporting tools:</strong> every profile and conversation can be reported directly within the app.</li>
+          <li><strong>Content moderation:</strong> photographs and profile content are moderated against our community guidelines, which prohibit any content involving or sexualising minors.</li>
+          <li><strong>Account action:</strong> accounts violating this policy are permanently removed, and, where required by law, reported to the appropriate authorities.</li>
+        </ul>
+      </section>
+
+      <section id="reporting">
+        <h2>4. How to report a concern</h2>
+        <div class="banner">
+          <p><strong>If you believe a child is in immediate danger, contact local law enforcement or emergency services first.</strong> In India, you may also contact the POCSO e-Box at <a href="https://ncpcr.gov.in" style="color:#fff;text-decoration:underline;">ncpcr.gov.in</a> or dial Childline at <strong>1098</strong>.</p>
+        </div>
+        <p style="margin-top:18px;">To report a profile, message, or content on Mahanubhav Sangam that concerns child safety:</p>
+        <ul>
+          <li><strong>In the app:</strong> open the profile or conversation, tap the report/flag icon, and select the relevant concern.</li>
+          <li><strong>By email:</strong> write to <a href="mailto:safety@mahanubhavsangam.app?subject=Child%20Safety%20Report">safety@mahanubhavsangam.app</a> with as much detail as possible — profile name/ID, screenshots, and description of the concern.</li>
+        </ul>
+        <p>All reports are treated confidentially and reviewed on priority.</p>
+      </section>
+
+      <section id="response">
+        <h2>5. What happens after a report</h2>
+        <ol>
+          <li>Our team reviews the report and any accompanying evidence promptly.</li>
+          <li>The reported account is suspended pending investigation where the concern appears credible.</li>
+          <li>If the report is substantiated, the account is permanently removed from the platform.</li>
+          <li>Where legally required, we cooperate with law enforcement and relevant child protection authorities, including preserving evidence as required by law.</li>
+        </ol>
+      </section>
+
+      <section id="resources">
+        <h2>6. External reporting resources</h2>
+        <ul>
+          <li><strong>Childline India:</strong> 1098 (24x7, toll-free)</li>
+          <li><strong>National Commission for Protection of Child Rights (NCPCR) POCSO e-Box:</strong> <a href="https://ncpcr.gov.in" target="_blank" rel="noopener">ncpcr.gov.in</a></li>
+          <li><strong>National Center for Missing &amp; Exploited Children (NCMEC) CyberTipline:</strong> <a href="https://report.cybertip.org" target="_blank" rel="noopener">report.cybertip.org</a></li>
+          <li><strong>Local police:</strong> contact your nearest police station or dial 112 (India's emergency number) for immediate danger.</li>
+        </ul>
+      </section>
+
+      <div class="contact-box" id="contact">
+        <h2>7. Contact us</h2>
+        <p>For child safety concerns specifically:</p>
+        <span class="field-label">Safety team</span>
+        <p><a href="mailto:safety@mahanubhavsangam.app">safety@mahanubhavsangam.app</a></p>
+        <span class="field-label">General enquiries</span>
+        <p><a href="mailto:hello@mahanubhavsangam.app">hello@mahanubhavsangam.app</a></p>
+        <p>Nagpur, Maharashtra, India</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Mahanubhav Sangam. Built for the samaj, by the samaj.</span>
+    <span><a href="../privacy.html">Privacy Policy</a> &middot; <a href="../delete-account/">Delete Account</a> &middot; <a href="../child-safety-standards/">Child Safety Standards</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
